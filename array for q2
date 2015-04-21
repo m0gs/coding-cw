@@ -7,7 +7,13 @@ void main(){
 	int i,j,k;
 	for(i=0;i<10;i++){
 		for(j=0;j<10;j++){
-			for(k=0;k<10;k++){array[i][j][k]=0;
-			printf("%d\n", array[i][j][k]);}}}
-		
+			for(k=0;k<10;k++){
+				visited_sites[i][j][k]=0;
+				printf("%d\n", array[i][j][k]);}}}
+	int all_visited = 1;
+	for(i=0;i<10;i++){
+		for(j=0;j<10;j++){
+			for(k=0;k<10;k++){
+				if (visited_sites[i][j][k] == 0){all_visited = 1;}}}}
+	
 }
